@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvPara"
+        style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para:" />
+
+    <EditText
+        android:id="@+id/edtEmails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPara"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvAssunto"
+        style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmails"
+        android:text="Assunto:" />
+
+    <EditText
+        android:id="@+id/edtAssunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAssunto"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvMensagem"
+        style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAssunto"
+        android:text="Mensagem:" />
+
+    <EditText
+        android:id="@+id/edtMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnEnviar"
+        android:layout_below="@+id/tvMensagem" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Enviar" />
+
+</RelativeLayout>
